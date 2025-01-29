@@ -1,16 +1,13 @@
-import { useId, useState, useRef } from 'react';
+import { useId, useState } from 'react';
 import './App.css';
+import KunstA from './components/KunstA';
+import KunstB from './components/KunstB'
 
 function App() {
     const id_input = useId();
     const id_textbox = useId();
     const [input, setInput] = useState();
     const [textbox, setTextbox] = useState();
-
-    const id_Lucca = useRef();
-    const id_FK = useRef();
-    const id_Contato = useRef();
-    
 
     const changePage = () => {
         if(input === "Marcelo Fernandes"){
@@ -29,13 +26,13 @@ function App() {
 
     const goToFK = () => {
         window.scroll({
-            top: 375
+            top: 790
         })
     }
 
     const goToContato = () => {
         window.scroll({
-            top: 800
+            top: 7000
         })
     }
 
@@ -57,16 +54,18 @@ function App() {
                     </ul>
                 </div>
             </div>
-            <div className='lucca' ref={id_Lucca}>
-                <div className='title' >Lucca Kunst</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae magna ac justo volutpat pulvinar id vel leo. Donec vitae malesuada arcu, a rhoncus mauris. Aenean tempus lacus vel laoreet feugiat. Fusce quis quam sed massa commodo consectetur. Sed mollis mattis neque, a dictum lectus euismod vel. Duis aliquam, tellus id tincidunt scelerisque, tellus purus accumsan sapien, condimentum accumsan sem nunc at ante. Aliquam nec erat sit amet orci aliquam elementum. Curabitur et purus lorem.Sed non nisl accumsan, aliquam nisi in, maximus neque. Suspendisse dui odio, commodo eget efficitur eu, imperdiet eu nunc. Integer libero dui, auctor non nibh ut, tincidunt porta metus. Nulla elementum eget felis vel dignissim. Quisque nibh neque, feugiat sit amet velit non, posuere aliquet velit. In aliquam convallis maximus. Integer magna metus, pharetra fermentum eleifend quis, pharetra sed tortor. Phasellus finibus, tellus vitae placerat ultrices, mi purus congue ex, eget blandit odio est eu lorem. Aenean sagittis neque urna, at maximus nibh ornare a. Proin sollicitudin quam eu dignissim tincidunt. Donec ex ligula, rutrum eu condimentum vel, rhoncus a ex. Donec et nulla congue, aliquam velit eu, euismod ex. Nam iaculis sem nec sagittis venenatis. Morbi rutrum elit id sem imperdiet ullamcorper.Nulla erat lacus, ornare quis pretium eu, suscipit ac lectus. Aliquam justo augue, convallis ultrices mi posuere, rhoncus iaculis tellus. Aliquam scelerisque orci et eleifend semper. Nam pharetra, nulla ut elementum eleifend, ante tellus euismod nunc, quis hendrerit mi tellus vitae magna. Sed nec interdum sapien, cursus aliquam arcu. Duis vel nibh dapibus, commodo libero non, fermentum neque. Morbi sed nisl eget ex ornare sodales vitae id nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sed blandit leo. Nunc maximus libero non faucibus euismod. Proin est nulla, dictum sit amet odio sit amet, sollicitudin maximus nulla.
+            <div className='lucca'>
+                <KunstA pessoa='lucca' />
             </div>
-            <div className='fk' ref={id_FK}>
+            <div className='fk'>
                 <hr />
                 <div className='title'>Família Kunst</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae magna ac justo volutpat pulvinar id vel leo. Donec vitae malesuada arcu, a rhoncus mauris. Aenean tempus lacus vel laoreet feugiat. Fusce quis quam sed massa commodo consectetur. Sed mollis mattis neque, a dictum lectus euismod vel. Duis aliquam, tellus id tincidunt scelerisque, tellus purus accumsan sapien, condimentum accumsan sem nunc at ante. Aliquam nec erat sit amet orci aliquam elementum. Curabitur et purus lorem.Sed non nisl accumsan, aliquam nisi in, maximus neque. Suspendisse dui odio, commodo eget efficitur eu, imperdiet eu nunc. Integer libero dui, auctor non nibh ut, tincidunt porta metus. Nulla elementum eget felis vel dignissim. Quisque nibh neque, feugiat sit amet velit non, posuere aliquet velit. In aliquam convallis maximus. Integer magna metus, pharetra fermentum eleifend quis, pharetra sed tortor. Phasellus finibus, tellus vitae placerat ultrices, mi purus congue ex, eget blandit odio est eu lorem. Aenean sagittis neque urna, at maximus nibh ornare a. Proin sollicitudin quam eu dignissim tincidunt. Donec ex ligula, rutrum eu condimentum vel, rhoncus a ex. Donec et nulla congue, aliquam velit eu, euismod ex. Nam iaculis sem nec sagittis venenatis. Morbi rutrum elit id sem imperdiet ullamcorper.Nulla erat lacus, ornare quis pretium eu, suscipit ac lectus. Aliquam justo augue, convallis ultrices mi posuere, rhoncus iaculis tellus. Aliquam scelerisque orci et eleifend semper. Nam pharetra, nulla ut elementum eleifend, ante tellus euismod nunc, quis hendrerit mi tellus vitae magna. Sed nec interdum sapien, cursus aliquam arcu. Duis vel nibh dapibus, commodo libero non, fermentum neque. Morbi sed nisl eget ex ornare sodales vitae id nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc sed blandit leo. Nunc maximus libero non faucibus euismod. Proin est nulla, dictum sit amet odio sit amet, sollicitudin maximus nulla.
+                <KunstB pessoa='albert' />
+                <KunstA pessoa='klaus' />
+                <KunstB pessoa='heinrich' />
+                <KunstA pessoa='emilia' />
             </div>
-            <div className='contato' ref={id_Contato}>
+            <div className='contato'>
                 <hr />
                 <div className='title'>Contato</div>
                 <form className="container-input">

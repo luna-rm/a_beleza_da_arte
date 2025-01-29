@@ -58,10 +58,7 @@ ul {
   gap: 7.5rem;
 }
 
-.lucca {
-  margin-top: 19%;
-  align-items: center;
-}
+
 .fk {
   align-items: center;
 }
@@ -145,4 +142,19 @@ textarea {
 
 html {
   scroll-behavior: smooth;
+}
+
+.lucca {
+  margin-top: 19%;
+  align-items: center;
+}
+
+img{
+  size: 10%;
+  position: relative;
+}
+
+hr {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }

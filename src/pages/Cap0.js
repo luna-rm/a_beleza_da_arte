@@ -5,7 +5,7 @@ import './Cap0.css';
 function Cap0() {
     return (
         <div> 
-            <img src={st3ll3} alt='?' /> 
+            <img className='st3ll3' src={st3ll3} alt='?' /> 
         </div>
     )
 }

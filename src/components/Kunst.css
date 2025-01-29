@@ -1,0 +1,94 @@
+img {
+    width: 30%;
+    z-index: -1;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    margin-top: 3%;
+}
+
+.textA {
+    margin-left: 3%;
+    text-align: left;
+}
+
+.titleA {
+    text-align: left;
+    font-size: 400%;
+    font-weight: 500;
+    margin-bottom: 2%;
+  }
+
+.subtitleA {
+    text-align: left;
+    font-size: 200%;
+}
+
+.fraseA {
+    text-align: right;
+    margin-top: 3%;
+    font-size: 200%;
+}
+
+.alotoftextA {
+    font-size: 150%;
+    text-indent: 5%;
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.vejaArtesA {
+    font-size: 250%;
+    text-decoration: underline;
+    margin-top: 8%;
+    text-align: right;
+}
+
+.textB {
+    margin-right: 3%;
+    text-align: right;
+}
+
+.titleB {
+    text-align: right;
+    font-size: 400%;
+    font-weight: 500;
+    margin-bottom: 2%;
+  }
+
+.subtitleB {
+    text-align: right;
+    font-size: 200%;
+}
+
+.fraseB {
+    text-align: left;
+    margin-top: 3%;
+    font-size: 200%;
+}
+
+.alotoftextB {
+    font-size: 150%;
+    text-indent: 5%;
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.vejaArtesB {
+    font-size: 250%;
+    text-decoration: underline;
+    margin-top: 8%;
+    text-align: left;
+}
+
+.contentB {
+    display: flex;
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    border-top: 1px solid rgb(160, 160, 160);
+}
+

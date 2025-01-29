@@ -58,8 +58,15 @@ ul {
   gap: 7.5rem;
 }
 
-.content {
+.lucca {
   margin-top: 19%;
+  align-items: center;
+}
+.fk {
+  align-items: center;
+}
+.contato {
+  margin-bottom: 7%;
   align-items: center;
 }
 
@@ -136,3 +143,6 @@ textarea {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}

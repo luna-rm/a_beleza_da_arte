@@ -8,11 +8,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Cap1 from './pages/Cap1';
+import Cap0 from './pages/Cap0';
 
 const router = createBrowserRouter([
     {
         path: "",
         element: <App/ >,
+    },
+    {
+        path: "/mansao",
+        element: <Cap0/ >,
     },
     {
         path: "/rascunho",

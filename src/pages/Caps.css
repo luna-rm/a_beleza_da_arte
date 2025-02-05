@@ -1,0 +1,24 @@
+.contentCap {
+    background-color: black;
+    width: 80vw;
+    height: 95vh;
+    color: white;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.titleCap {
+    font-size: 300%;
+}
+
+.subCap {
+    font-size: 150%;
+}
+
+.alotoftextCap {
+    font-size: 150%;
+    text-indent: 5%;
+    margin-top: 3%;
+    text-align: justify;
+}

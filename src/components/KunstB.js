@@ -13,6 +13,10 @@ function Kunst(props) {
     const [texto3, setTexto3] = useState();
     const [frase, setFrase] = useState();
 
+    const goToArts = () => {
+        window.location.href = '/artes'
+    }
+
     useEffect(() => {
         setNome("");
 
@@ -79,7 +83,7 @@ function Kunst(props) {
                 <div className='alotoftextB'>{texto}</div>
                 <div className='alotoftextB'>{texto2}</div>
                 <div className='alotoftextB'>{texto3}</div>
-                <div className='vejaArtesB'>Veja Artes de {nome}</div>
+                <div className='vejaArtesB' onClick={goToArts}>Veja Artes de {nome}</div>
             </div>
             <img ref={imagem} alt={nome} />
         </div>

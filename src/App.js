@@ -16,6 +16,13 @@ function App() {
                 window.location.href = '/mansao'
             }
         }
+
+        if(input === "Leona Hoff"){
+            if(textbox === "p3Ty568jjKl3"){
+                console.log("grep")
+                window.location.href = '/mansao'
+            }
+        }
     }
 
     const goToLucca = () => {

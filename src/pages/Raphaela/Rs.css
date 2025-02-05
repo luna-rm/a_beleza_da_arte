@@ -1,0 +1,35 @@
+.contentR {
+    background-color: black;
+    width: 80vw;
+    height: 95vh;
+    color: white;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    align-items: center;
+}
+
+.imgR{
+    width: 50%;
+    z-index: 1;
+}
+
+.imgR1{
+    width: 30%;
+    z-index: 1;
+}
+
+.imgR2{
+    width: 50%;
+    margin-left: 5%;
+    z-index: 1;
+}
+
+.fraseR{
+    margin-top: 2%;
+}
+
+.tocarR{
+    text-decoration: underline;
+    font-size: 190%;
+}
